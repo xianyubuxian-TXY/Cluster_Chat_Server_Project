@@ -4,7 +4,7 @@
 # 项目依赖
 Linux、Json、boost、muduo、cmake、mysql、redis、nginx
 
-mysql数据库结构：
+# mysql数据库结构：
 create database chat;
 use chat;
 
