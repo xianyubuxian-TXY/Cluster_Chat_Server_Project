@@ -34,7 +34,7 @@ create table GroupUser(
 );
 
 create table OfflineMessage(
-	userid int primary key comment "用户id",
+	userid int not null comment "用户id",
 	message varchar(500) not null comment "离线消息（存储Json字符串）"
 );
 
