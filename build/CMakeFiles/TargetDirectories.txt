@@ -5,3 +5,6 @@
 /home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/build/src/server/CMakeFiles/ChatServer.dir
 /home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/build/src/server/CMakeFiles/edit_cache.dir
 /home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/build/src/server/CMakeFiles/rebuild_cache.dir
+/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/build/src/client/CMakeFiles/ChatClient.dir
+/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/build/src/client/CMakeFiles/edit_cache.dir
+/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/build/src/client/CMakeFiles/rebuild_cache.dir

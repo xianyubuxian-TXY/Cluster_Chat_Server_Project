@@ -12,7 +12,9 @@ server和client的公共文件
 enum EnMsgType
 {
     LOGIN_MSG=1, //登录消息
-    LOGIN_MSG_ACK,
+    LOGIN_MSG_ACK, //登录消息回复
+    LOGINOUT_MSG, //注销消息
+    GET_USERDATA_MSG, //获取用户状态业务
     REG_MSG,  //注册消息
     REG_MSG_ACK,  //注册消息回复
     ONE_CHAT_MSG, //单人聊天信息

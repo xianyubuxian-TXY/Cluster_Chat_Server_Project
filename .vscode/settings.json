@@ -82,7 +82,18 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "any": "cpp",
+        "buffer": "cpp",
+        "executor": "cpp",
+        "internet": "cpp",
+        "io_context": "cpp",
+        "netfwd": "cpp",
+        "socket": "cpp",
+        "source_location": "cpp",
+        "timer": "cpp",
+        "ranges": "cpp",
+        "stdfloat": "cpp"
     },
     "cmake.sourceDirectory": "/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project"
 }

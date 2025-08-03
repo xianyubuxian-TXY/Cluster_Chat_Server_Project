@@ -30,6 +30,10 @@ public:
     MsgHandler getHandler(int msgid);
     //处理登录业务
     void login(const TcpConnectionPtr& conn,json &js,Timestamp time);
+    //处理注销业务
+    void loginOut(const TcpConnectionPtr& conn,json &js,Timestamp time);
+    //获取当前用户信息业务
+    void getCurrentUserData(const TcpConnectionPtr& conn,json &js,Timestamp time);
     //处理注册业务
     void reg(const TcpConnectionPtr& conn,json &js,Timestamp time);
     //单人聊天业务
@@ -42,6 +46,9 @@ public:
     void addGroupChat(const TcpConnectionPtr& conn,json &js,Timestamp time);
     //群聊聊天业务
     void groupChat(const TcpConnectionPtr& conn,json &js,Timestamp time);
+
+    //获取用户信息
+    json getUserData(json& js);
 
     //除以用户的异常退出
     void clientCloseException(const TcpConnectionPtr& conn);

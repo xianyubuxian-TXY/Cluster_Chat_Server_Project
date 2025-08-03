@@ -38,7 +38,7 @@ vector<Group> GroupModel::queryGroups(int userid)
 {
     char sql[1024];
     //获取群组信息
-    sprintf(sql,"select a.id,a.groupname,a.groupdesc from AllGroup a inner join on GroupUser b where a.id=b.groupid and b.userid=%d",userid);
+    sprintf(sql,"select a.id,a.groupname,a.groupdesc from AllGroup a inner join GroupUser b on a.id=b.groupid and b.userid=%d",userid);
     MySQL mysql;
     vector<Group> groupVec;
     if(mysql.connect())
@@ -62,7 +62,7 @@ vector<Group> GroupModel::queryGroups(int userid)
     for(auto &group:groupVec)
     {
         //获取组内成员信息
-        sprintf(sql,"select a.id,a.name,a.state,b.grouprole from User a inner join on GroupUser b where a.id=b.userid and b.id=%d",group.getId());
+        sprintf(sql,"select a.id,a.name,a.state,b.grouprole from User a inner join GroupUser b on a.id=b.userid and b.groupid=%d",group.getId());
         MYSQL_RES* res=mysql.query(sql);
         if(res!=nullptr)
         {

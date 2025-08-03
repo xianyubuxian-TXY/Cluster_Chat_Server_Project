@@ -14,7 +14,7 @@ public:
 
     //更新数据库中user的state
     bool updateState(User& user);
-    
+
     //重置所有用户的状态为offline
     void resetState();
 };

@@ -41,6 +41,7 @@ void ChatServer::onConnection(const TcpConnectionPtr& conn)
 //读写事件相关的回调函数
 void ChatServer::onMessage(const TcpConnectionPtr& conn,Buffer* buffer,Timestamp time)
 {
+
     string buf=buffer->retrieveAllAsString();
     //数据的反序列化
     json js=json::parse(buf);

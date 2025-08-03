@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -g CMakeFiles/ChatClient.dir/main.cpp.o -o /home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/bin/ChatClient  -lpthread 

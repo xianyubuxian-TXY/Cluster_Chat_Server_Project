@@ -33,7 +33,7 @@ vector<User> FriendModel::query(int userId)
 //添加好友
 void FriendModel::insert(int userId,int friendId)
 {
-    char sql[1024];
+    char sql[1024]={0};
     sprintf(sql,"insert into Friend values(%d,%d)",userId,friendId);
     MySQL mysql;
     if(mysql.connect())
