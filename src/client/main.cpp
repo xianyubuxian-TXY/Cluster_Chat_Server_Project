@@ -129,7 +129,7 @@ int main(int argc,char* argv[])
                     }
                     else
                     {
-                        cout<<"main buffer:"<<buffer<<endl<<endl;
+                        // cout<<"main buffer:"<<buffer<<endl<<endl;
                         json response=json::parse(buffer);
                         int error=response["error"].get<int>();
                         if(error==1 || error==2)

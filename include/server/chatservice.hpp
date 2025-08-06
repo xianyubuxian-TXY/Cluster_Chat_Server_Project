@@ -16,6 +16,7 @@ using json=nlohmann::json;
 #include "offlinemessagemodel.hpp"
 #include "friendmodel.hpp"
 #include "groupmodel.hpp"
+#include "redis.hpp"
 
 //表示处理消息的事件回调类型
 using MsgHandler = function<void(const TcpConnectionPtr& conn,json &js,Timestamp)>;
@@ -54,6 +55,9 @@ public:
     void clientCloseException(const TcpConnectionPtr& conn);
     //服务端退出后，重置所有user的状态为offline
     void reset();
+
+    //从redis消息队列中获取订阅消息
+    void handleRedisSubscribeMessage(int channelId,string message);
 private:
     ChatService();
 
@@ -76,6 +80,9 @@ private:
 
     //群聊操作类
     GroupModel _groupModel;
+
+    //redis操作对象
+    Redis _redis;
 };  
 
 #endif

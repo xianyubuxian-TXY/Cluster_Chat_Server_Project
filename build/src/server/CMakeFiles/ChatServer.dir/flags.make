@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server/database -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server/model -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/thirdparty
+CXX_INCLUDES = -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server/database -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server/model -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/include/server/redis -I/home/student/Code/C++/Web_Project/Cluster_Chat_Server_Project/thirdparty
 
 CXX_FLAGS = -g -g
 
